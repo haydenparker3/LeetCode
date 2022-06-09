@@ -1,3 +1,7 @@
+/*
+ * From a given string finds the length of the last word. Words are separated by spaces
+ */
+
 class Solution {
     public int lengthOfLastWord(String s) {
         int wlength = 0;

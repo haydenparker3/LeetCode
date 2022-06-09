@@ -1,3 +1,7 @@
+/*
+ * Adds two binary number in String format and returns the new number as a string
+ */
+
 class Solution {
     public String addBinary(String a, String b) {
         StringBuilder str = new StringBuilder();
