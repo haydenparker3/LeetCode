@@ -1,4 +1,5 @@
 /*
+ * 67. Add Binary
  * Adds two binary number in String format and returns the new number as a string
  */
 
