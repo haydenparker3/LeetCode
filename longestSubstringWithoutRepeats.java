@@ -1,6 +1,7 @@
 /*
  * 3. Longest Substring Without Repeating Characters
- * Most optimal solution with O(n) runtime
+ * Most optimal solution with O(n) runtime. You use a hashmap to keep track of previous characters.
+ * If repeat character, you remove it and previous characters by setting subtract to its index
  */
 
 class Solution {
