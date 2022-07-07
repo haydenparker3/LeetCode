@@ -6,7 +6,7 @@ class Solution {
     boolean memo[][][];
     
     public boolean isInterleave(String s1, String s2, String s3) {
-        memo = new boolean[s1.length()+1][s2.length()+1][s3.length()];
+        memo = new boolean[s1.length()+1][s2.length()+1][s3.length()+1];
         
         return weave(s1, s2, s3, 0, 0, 0);
     }
@@ -16,10 +16,13 @@ class Solution {
         if(i == s3.length()) {
             if(a == s1.length() && b == s2.length()) {
                 return true;
-            } else
+            } else {
+                memo[a][b][i] = true;
                 return false;
+            }
         }
         if(a == s1.length() && b == s2.length()) {
+            memo[a][b][i] = true;
             return false;
         }
         
