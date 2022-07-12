@@ -12,7 +12,7 @@ class Solution {
         int possible = sumSides % 4;
         
         if(possible == 0) {
-            Arrays.sort(matchsticks);
+            Arrays.sort(matchsticks); 
             int side = sumSides / 4;
             
             return make(side, 0, 0, 0, 0, matchsticks.length-1, matchsticks);
